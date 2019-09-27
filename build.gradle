@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'me.edmund'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.sparkjava:spark-core:2.6.0'
+    compile group: 'com.twilio.sdk', name: 'twilio', version: '7.9.0'
+    compile 'org.slf4j:slf4j-simple:1.6.1'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.1'
+}
